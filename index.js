@@ -2,8 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const dotenv=require("dotenv")
+const cors=require("cors")
 dotenv.config()
 const app = express();
+app.use(cors())
 const port = process.env.PORT
 
 // Define the folder path where text files will be stored
