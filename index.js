@@ -4,7 +4,7 @@ const path = require("path");
 const dotenv=require("dotenv")
 dotenv.config()
 const app = express();
-const port = 3000;
+const port = process.env.PORT
 
 // Define the folder path where text files will be stored
 const folderPath = path.join(__dirname, "texts");
